@@ -11,3 +11,11 @@ def test_register_url(self):
 def test_signin_url(self):
          url = reverse("Profile")
          self.assertEquals(resolve(url).func, Profile)
+
+def test_registercustomer_url(self):
+         url = reverse("RegisterCustomer")
+         self.assertEquals(resolve(url).func, RegisterCustomer)
+
+def test_loginauthen_url(self):
+         url = reverse("LoginAuthentication"),
+         self.assertEquals(resolve(url).func, LoginAuthentication)
