@@ -1,12 +1,13 @@
 from telnetlib import LOGOUT
 from django.test import TestCase
 from django.urls import *
+from VehicleRentingSystem.CustomerHome.views import Logout
 
 from VehicleRentingSystem.Owner.views import Profile
 
 def test_register_url(self):
          url = reverse("Logout")
-         self.assertEquals(resolve(url).func, LOGOUT)
+         self.assertEquals(resolve(url).func, Logout)
 
 def test_signin_url(self):
          url = reverse("Profile")
