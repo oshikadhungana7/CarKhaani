@@ -31,3 +31,6 @@ def test_profile_url(self):
 def test_register_url(self):
          url = reverse("Register")
          self.assertEquals(resolve(url).func, register)
+def test_register_url(self):
+         url = reverse("Register")
+         self.assertEquals(resolve(url).func, register)
