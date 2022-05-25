@@ -12,8 +12,11 @@ urlpatterns = [
     path('register/',views.register,name="Register"),
     path('Profile/',views.Profile,name="Profile"),
 <<<<<<< HEAD
+<<<<<<< HEAD
     include("Owner.urls")),
 =======
+=======
+>>>>>>> d32a1a7f101ba970f0428e742cee621ab1bb77e5
     path('about/', views.about_us, name="AboutUs"),
     path('contact/', views.contact_us, name="ContactUs"),
     path('search/', views.search, name="Search"),
@@ -24,6 +27,9 @@ urlpatterns = [
     path('SentRequests/',views.SentRequests,name="SentRequests"),
     path('RentVehicle',include("RentVehicle.urls")),
     path('Owner/',include("Owner.urls")),
+<<<<<<< HEAD
+>>>>>>> d32a1a7f101ba970f0428e742cee621ab1bb77e5
+=======
 >>>>>>> d32a1a7f101ba970f0428e742cee621ab1bb77e5
     path('Manager/',include("Manager.urls"))
 ]

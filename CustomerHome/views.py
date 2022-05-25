@@ -47,7 +47,10 @@ def index(request):
         return render(request,'index.html',{'Message':Message,'vehicle':vehicle})
     return render(request,'index.html',{'vehicle':vehicle})
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> d32a1a7f101ba970f0428e742cee621ab1bb77e5
 
 def signin(request):
     return render(request,'SignIn.html')
@@ -124,6 +127,9 @@ def Logout(request):
     Message = "Successfully Logged Out!!"
     return redirect('/')
 
+<<<<<<< HEAD
+>>>>>>> d32a1a7f101ba970f0428e742cee621ab1bb77e5
+=======
 >>>>>>> d32a1a7f101ba970f0428e742cee621ab1bb77e5
 def Home(request):
     if('user_email' not in request.session):
@@ -180,6 +186,7 @@ def CheckAvailability(request,Vehicle_license_plate):
     rent_data = {"RentVehicle_Date_of_Booking":RentVehicle_Date_of_Booking, "RentVehicle_Date_of_Return":RentVehicle_Date_of_Return,"days":days, "total":total}
     
 <<<<<<< HEAD
+<<<<<<< HEAD
     for rv in rentvehicle:
 
         if (rv.RentVehicle_Date_of_Booking >= RentVehicle_Date_of_Booking and RentVehicle_Date_of_Return >= rv.RentVehicle_Date_of_Booking) or (RentVehicle_Date_of_Booking >= rv.RentVehicle_Date_of_Booking and RentVehicle_Date_of_Return <= rv.RentVehicle_Date_of_Return) or (RentVehicle_Date_of_Booking <= rv.RentVehicle_Date_of_Return and RentVehicle_Date_of_Return >= rv.RentVehicle_Date_of_Return):
@@ -214,11 +221,17 @@ def SentRequests(request):
         Message = "You haven't rented any vehicle yet!!"
         return render(req', params)
 =======
+=======
+>>>>>>> d32a1a7f101ba970f0428e742cee621ab1bb77e5
     for rv in rentvehicle
 
 def search(request):
     query = request.GET['query']
     vehicle = Vehicle.objects.filter(Vehicle_name__icontains=query)
     params = {'vehicle': vehicle}
+<<<<<<< HEAD
+    return render(request,'search_not_login.html', params)
+>>>>>>> d32a1a7f101ba970f0428e742cee621ab1bb77e5
+=======
     return render(request,'search_not_login.html', params)
 >>>>>>> d32a1a7f101ba970f0428e742cee621ab1bb77e5
