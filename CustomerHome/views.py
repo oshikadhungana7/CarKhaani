@@ -48,9 +48,12 @@ def index(request):
     return render(request,'index.html',{'vehicle':vehicle})
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> d32a1a7f101ba970f0428e742cee621ab1bb77e5
+=======
+>>>>>>> f11734c1c76b04b04a6a9d2dda0bbb96b517ac68
 
 def signin(request):
     return render(request,'SignIn.html')
@@ -128,9 +131,12 @@ def Logout(request):
     return redirect('/')
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> d32a1a7f101ba970f0428e742cee621ab1bb77e5
 =======
 >>>>>>> d32a1a7f101ba970f0428e742cee621ab1bb77e5
+=======
+>>>>>>> f11734c1c76b04b04a6a9d2dda0bbb96b517ac68
 def Home(request):
     if('user_email' not in request.session):
         return redirect('/signin/')
@@ -187,6 +193,9 @@ def CheckAvailability(request,Vehicle_license_plate):
     
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f11734c1c76b04b04a6a9d2dda0bbb96b517ac68
     for rv in rentvehicle:
 
         if (rv.RentVehicle_Date_of_Booking >= RentVehicle_Date_of_Booking and RentVehicle_Date_of_Return >= rv.RentVehicle_Date_of_Booking) or (RentVehicle_Date_of_Booking >= rv.RentVehicle_Date_of_Booking and RentVehicle_Date_of_Return <= rv.RentVehicle_Date_of_Return) or (RentVehicle_Date_of_Booking <= rv.RentVehicle_Date_of_Return and RentVehicle_Date_of_Return >= rv.RentVehicle_Date_of_Return):
@@ -219,19 +228,33 @@ def SentRequests(request):
         return render(request,'SentRequests.html',{'customer':customer,'rentvehicle':rentvehicle,'vehicle':vehicle})
     else:
         Message = "You haven't rented any vehicle yet!!"
+<<<<<<< HEAD
         return render(req', params)
 =======
 =======
 >>>>>>> d32a1a7f101ba970f0428e742cee621ab1bb77e5
     for rv in rentvehicle
+=======
+        return render(request,'SentRequests.html',{'customer':customer,'rentvehicle':rentvehicle,'Message':Message})
+
+def about_us(request):
+    return HttpResponse('About Us')
+    
+def contact_us(request):
+    return HttpResponse('Contact Us')
+>>>>>>> f11734c1c76b04b04a6a9d2dda0bbb96b517ac68
 
 def search(request):
     query = request.GET['query']
     vehicle = Vehicle.objects.filter(Vehicle_name__icontains=query)
     params = {'vehicle': vehicle}
 <<<<<<< HEAD
+<<<<<<< HEAD
     return render(request,'search_not_login.html', params)
 >>>>>>> d32a1a7f101ba970f0428e742cee621ab1bb77e5
 =======
     return render(request,'search_not_login.html', params)
 >>>>>>> d32a1a7f101ba970f0428e742cee621ab1bb77e5
+=======
+    return render(request,'search_not_login.html', params)
+>>>>>>> f11734c1c76b04b04a6a9d2dda0bbb96b517ac68
