@@ -1,12 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" href="{% static 'img/Logos/TabTop2Logo.png' %}" type="image/gif" sizes="18x18">
+    <title>CarKhaani|Simply Swift</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
     
+<header class="header">
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"> <span>Car</span>Khaani </a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#vehicles">popular</a>
+        <a href="#services">services</a>
+        <a href="#reviews">reviews</a>
+        <a href="#contact">contact</a>
+    </nav>
+</header> 
+    
+
+    <span id="close-login-form" class="fas fa-times"></span>
+
+   
+
+</div> -->
+
+<section class="home" id="home">
+
+    <h3 data-speed="-2" class="home-parallax" style="text-transform:unset; margin-bottom: 5rem;">Simply Swift</h3>
+
+    <img data-speed="5" class="home-parallax" src="https://www.duttonauto.ca/content/themes/dealersite-default/assets/img/three-vehicles.png" alt="">
+</section>
+<section class="vehicles" id="vehicles" style="background-color: aliceblue;">
+
+    <h1 class="heading"> popular vehicles </h1>
+
+    <div class="swiper vehicles-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="image/vehicle-1.png" alt="">
+                <div class="content">
+                    <h3>new model</h3>
+                    <div class="price"> <span>price : </span> $62,000/- </div>
+                    <p>
+                        new
+                        <span class="fas fa-circle"></span> 2021
+                        <span class="fas fa-circle"></span> automatic
+                        <span class="fas fa-circle"></span> petrol
+                        <span class="fas fa-circle"></span> 183mph
+                    </p>
+                    
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/vehicle-2.png" alt="">
+                <div class="content">
+                    <h3>new model</h3>
+                    <div class="price"> <span>price : </span> $62,000/- </div>
+                    <p>
+                        new
+                        <span class="fas fa-circle"></span> 2021
+                        <span class="fas fa-circle"></span> automatic
+                        <span class="fas fa-circle"></span> petrol
+                        <span class="fas fa-circle"></span> 183mph
+                    </p>
+                   
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/vehicle-3.png" alt="">
+                <div class="content">
+                    <h3>new model</h3>
+                    <div class="price"> <span>price : </span> $62,000/- </div>
+                    <p>
+                        new
+                        <span class="fas fa-circle"></span> 2021
+                        <span class="fas fa-circle"></span> automatic
+                        <span class="fas fa-circle"></span> petrol
+                        <span class="fas fa-circle"></span> 183mph
+                    </p>
+                 
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/vehicle-4.png" alt="">
+                <div class="content">
+                    <h3>new model</h3>
+                    <div class="price"> <span>price : </span> $62,000/- </div>
+                    <p>
+                        new
+                        <span class="fas fa-circle"></span> 2021
+                        <span class="fas fa-circle"></span> automatic
+                        <span class="fas fa-circle"></span> petrol
+                        <span class="fas fa-circle"></span> 183mph
+                    </p>
+                   
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/vehicle-5.png" alt="">
+                <div class="content">
+                    <h3>new model</h3>
+                    <div class="price"> <span>price : </span> $62,000/- </div>
+                    <p>
+                        new
+                        <span class="fas fa-circle"></span> 2021
+                        <span class="fas fa-circle"></span> automatic
+                        <span class="fas fa-circle"></span> petrol
+                        <span class="fas fa-circle"></span> 183mph
+                    </p>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/vehicle-6.png" alt="">
+                <div class="content">
+                    <h3>new model</h3>
+                    <div class="price"> <span>price : </span> $62,000/- </div>
+                    <p>
+                        new
+                        <span class="fas fa-circle"></span> 2021
+                        <span class="fas fa-circle"></span> automatic
+                        <span class="fas fa-circle"></span> petrol
+                        <span class="fas fa-circle"></span> 183mph
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+</section>
+
+<section class="services" id="services">
+
+    <h1 class="heading"> our services </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-car"></i>
+            <h3>car selling</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, nisi.</p>
+            
+        </div>
+
+        <div class="box">
+            <i class="fas fa-tools"></i>
+            <h3>parts repair</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, nisi.</p>
+           
+        </div>
+
+        <div class="box">
+            <i class="fas fa-car-crash"></i>
+            <h3>car insurance</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, nisi.</p>
+            
+        </div>
+
+        <div class="box">
+            <i class="fas fa-car-battery"></i>
+            <h3>battery replacement</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, nisi.</p>
+           
+        </div>
+
+        <div class="box">
+            <i class="fas fa-gas-pump"></i>
+            <h3>oil change</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, nisi.</p>
+            
+        </div>
+
+        <div class="box">
+            <i class="fas fa-headset"></i>
+            <h3>24/7 support</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, nisi.</p>
+            
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<section class="reviews" id="reviews" style="background-color: aliceblue;">
+
+    <h1 class="heading"> client's review </h1>
+
+    <div class="swiper review-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box" style="  background-color: white; border: black solid 2px; border-radius:18px;">
+            <img src="./static/image/pic-1.png" alt="" />
+            <div class="content">
+              <p>
+                Great experience, CarKhaani was very good and the sale took
+                place very quick and was able to secure transportation 2 days
+                after the purchase. Car got the my home in a timely fashion.
+              </p>
+              <h3>Prabin</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide box" style="  background-color: white; border: black solid 2px;border-radius:18px;">
+            <img src="./static/image/pic-2.png" alt="" />
+            <div class="content">
+              <p>
+                Smooth transaction and very helpful staff made my first car
+                buying experience easy. CarKhaani and the crew have given me
+                their full attention to all my car needs. Thanks again for the
+                great help!
+              </p>
+              <h3>Gaurav</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide box" style="  background-color: white;border: black solid 2px; border-radius:18px;">
+            <img src="./static/image/pic-3.png" alt="" />
+            <div class="content">
+              <p>
+                You get friendly people who don’t try to “push” anything on you.
+                They’re helpful. They listen. They’re accommodating. That was my
+                experience with CarKhaani.
+              </p>
+              <h3>Nabin</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide box" style="  background-color: white;border: black solid 2px; border-radius:18px;">
+            <img src="./static/image/pic-4.png" alt="" />
+            <div class="content">
+              <p>
+                I had a great experience at CarKhaani. Found the exact car I
+                wanted in tip-top shape at a fair price with excellent customer
+                service and attention-to-detail. I highly recommend this
+                dealership.
+              </p>
+              <h3>Birasat</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+
+</section>
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> contact  us</h1>
+
+    <div class="row">
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.3555432283943!2d85.32788801504888!3d27.706306682792427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19c4f53018d1%3A0x2c9602e69b406e27!2sSoftwarica%20College%20-%20Block%20E!5e0!3m2!1sen!2snp!4v1656695340447!5m2!1sen!2snp"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+
+        <form action="">
+          <h3>get in touch</h3>
+          <input type="text" placeholder=" Name" class="box" />
+          <input type="email" placeholder=" E-mail" class="box" />
+          <input type="tel" placeholder="Subject" class="box" />
+          <textarea
+            placeholder="Your message !!!"
+            class="box"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <input type="submit" value="send message" class="btn" />
+        </form>
+      </div>
+
+</section>
+
+<section class="footer" id="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>quick links</h3>
+        <a href="#home"> <i class="fas fa-arrow-right"></i> home </a>
+        <a href="#vehicles"> <i class="fas fa-arrow-right"></i> popular </a>
+        <a href="#services"> <i class="fas fa-arrow-right"></i> services </a>
+        <a href="#reviews"> <i class="fas fa-arrow-right"></i> reviews </a>
+        <a href="#contact"> <i class="fas fa-arrow-right"></i> contact </a>
+      </div>
+
+      <div class="box">
+        <h3>contact info</h3>
+        <a href="tel:01-4541577"> <i class="fas fa-phone"></i> 01-4541577 </a>
+        <a href="tel:01-4525661"> <i class="fas fa-phone"></i> 01-4525661 </a>
+        <a href="mailto:hello@softwarica.edu.np">
+          <i class="fas fa-envelope"></i>
+          <span class="email">hello@softwarica.edu.np</span>
+        </a>
+        <a href="https://goo.gl/maps/wGDjBsrSipdQdtCH7">
+          <i class="fas fa-map-marker-alt"></i> Gyaneshwor Marg, Kathmandu
+          44600
+        </a>
+      </div>
+
+      <div class="box">
+        <h3>More links</h3>
+        <a href="https://www.facebook.com/softwarica.nepal/">
+          <i class="fab fa-facebook-f"></i> facebook
+        </a>
+        <a href="https://twitter.com/softwarica">
+          <i class="fab fa-twitter"></i> twitter
+        </a>
+        <a href="https://www.instagram.com/softwarica.college/?hl=en">
+          <i class="fab fa-instagram"></i> instagram
+        </a>
+        <a href="https://softwarica.edu.np/">
+          <i class="fab fa-chrome"></i> website
+        </a>
+      </div>
+      <div class="box">
+        <a href="home.html" class="logo">
+          <span>Car<span class="next">Khaani</span></span></a
+        >
+        <h3>choose your desired vehicles today.</h3>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+
 </body>
 </html>
