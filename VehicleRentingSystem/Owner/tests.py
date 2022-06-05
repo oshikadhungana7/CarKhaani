@@ -47,3 +47,6 @@ def test_registercustomer_url(self):
 def test_loginauthen_url(self):
          url = reverse("LoginAuthentication"),
          self.assertEquals(resolve(url).func, LoginAuthentication)
+def test_home_url(self):
+         url = reverse("LoggedinHome"),
+         self.assertEquals(resolve(url).func, Home)
