@@ -1,0 +1,127 @@
+div.Boxshadow {
+    box-shadow: 10px 9px 24px -7px rgba(0, 0, 0, 0.6);
+    transition: opacity 0.3s ease-in-out;
+}
+
+div.Boxshadow:hover {
+    box-shadow: 10px 9px 24px 0px rgba(0, 0, 0, 0.6);
+    transition: all 0.4s ease-in-out;
+}
+
+div#signin {
+    border: 2px solid rgba(28, 110, 164, 0.46);
+    border-radius: 15px;
+    margin: auto;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+/* Navbar underline on hover  starts*/
+
+.navbar-nav a:after,
+.navbar-nav a:before {
+    transition: all .5s;
+}
+
+.navbar-nav a:hover {
+    color: rgb(85, 85, 85);
+}
+
+.navbar-nav a {
+    position: relative;
+    margin-right: 20px;
+}
+
+.navbar-nav a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: rgb(0, 225, 255);
+    height: 1px;
+}
+
+.navbar-nav a:hover:after {
+    width: 100%;
+}
+
+
+/* Navbar ends */
+
+
+/* 
+
+.footer {
+    background: var(--light-blue);
+    padding-bottom: 8rem;
+  }
+  
+  .footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .footer .box-container .box h3 {
+    font-size: 2.2rem;
+    padding: 1rem 0;
+    color: var(--black);
+  }
+  
+  .footer .box-container .box a {
+    display: block;
+    font-size: 1.4rem;
+    padding: 1rem 0;
+    color: var(--light-color);
+  }
+  
+  .footer .box-container .box a i {
+    padding-right: 0.5rem;
+    color: var(--black);
+  }
+  
+  .footer .box-container .box a:hover i {
+    padding-right: 2rem;
+  }
+  
+  .footer .credit {
+    text-align: center;
+    padding: 1.5rem;
+    padding-top: 2.5rem;
+    margin-top: 2rem;
+    border-top: var(--border);
+    font-size: 2rem;
+    color: var(--black);
+  }
+  
+  .footer .box .email {
+    text-transform: lowercase;
+  }
+  
+  .footer .box .logo {
+    font-size: 3rem;
+    color: #000;
+  }
+  
+  .footer .logo span {
+    font-size: 3rem;
+    color: var(--blue);
+    font-weight: bold;
+  }
+  
+  .footer .logo .next {
+    font-size: 3rem;
+    color: #fff;
+  }
+  .footer .logo h3 {
+    font-size: 2rem;
+    color: #000;
+    text-align: left;
+  } */
