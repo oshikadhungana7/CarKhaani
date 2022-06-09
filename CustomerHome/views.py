@@ -122,4 +122,64 @@ def Logout(request):
     Message = "Successfully Logged Out!!"
     return redirect('/')
 
-def 
+def Home(request):
+    if('user_email' not in request.session):
+        return redirect('/signin/')
+    customer_email = request.session.get('user_email')
+    customer = Customer.objects.get(customer_email=customer_email)
+    vehicle = Vehicle.objects.all()
+    Message="Choose your car !"
+    return render(request,'Home.html',{'vehicle':vehicle,'Message':Message,'customer':customer})
+
+def Profile(request):
+    if('user_email' not in request.session):
+        return redirect('/signin/')
+    customer_email = request.session.get('user_email')
+    customer = Customer.objects.get(customer_email=customer_email)
+    return render(request,'Profile.html',{'customer':customer})
+
+def showdetails(request,Vehicle_license_plate):
+    vehicle = Vehicle.objects.get(Vehicle_license_plate=Vehicle_license_plate)
+    if('user_email' not in request.session):
+        return render(request,'showdetails_not_login.html',{'vehicle':vehicle})
+    else:
+        customer_email = request.session.get('user_email')
+        customer = Customer.objects.get(customer_email=customer_email)
+        return render(request,'showdetails_loggedin.html',{'vehicle':vehicle,'customer':customer})
+
+def CheckAvailability(request,Vehicle_license_plate):
+    if('user_email' not in request.session):
+        return redirect('/signin/')
+
+    RentVehicle_Date_of_Booking=request.POST.get('RentVehicle_Date_of_Booking','')
+    RentVehicle_Date_of_Return=request.POST.get('RentVehicle_Date_of_Return','')
+    
+    RentVehicle_Date_of_Booking = datetime.strptime(RentVehicle_Date_of_Booking, '%Y-%m-%d').date()
+    RentVehicle_Date_of_Return = datetime.strptime(RentVehicle_Date_of_Return, '%Y-%m-%d').date()
+
+    rentvehicle = RentVehicle.objects.filter(Vehicle_license_plate=Vehicle_license_plate)
+    vehicle = Vehicle.objects.get(Vehicle_license_plate=Vehicle_license_plate)
+
+    customer_email = request.session.get('user_email')
+    customer = Customer.objects.get(customer_email=customer_email)
+
+    if RentVehicle_Date_of_Booking < date.today():
+        Incorrect_dates = "Please give proper dates"
+        return render(request,'showdetails_loggedin.html',{'Incorrect_dates':Incorrect_dates,'vehicle':vehicle,'customer':customer})
+
+    if RentVehicle_Date_of_Return < RentVehicle_Date_of_Booking:
+        Incorrect_dates = "Please give proper dates"
+        return render(request,'showdetails_loggedin.html',{'Incorrect_dates':Incorrect_dates,'vehicle':vehicle,'customer':customer})
+    
+    days=(RentVehicle_Date_of_Return-RentVehicle_Date_of_Booking).days+1
+    total=days*vehicle.Vehicle_price
+    
+    rent_data = {"RentVehicle_Date_of_Booking":RentVehicle_Date_of_Booking, "RentVehicle_Date_of_Return":RentVehicle_Date_of_Return,"days":days, "total":total}
+    
+    for rv in rentvehicle
+
+def search(request):
+    query = request.GET['query']
+    vehicle = Vehicle.objects.filter(Vehicle_name__icontains=query)
+    params = {'vehicle': vehicle}
+    return render(request,'search_not_login.html', params)
