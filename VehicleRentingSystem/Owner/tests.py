@@ -50,3 +50,10 @@ def test_loginauthen_url(self):
 def test_home_url(self):
          url = reverse("LoggedinHome"),
          self.assertEquals(resolve(url).func, Home)
+
+def test_avaibility_url(self):
+        url = reverse("CheckAvaibility"),
+        self.assertEquals(resolve(url).func, CheckAvailability)
+def test_vehicledetails_url(self):
+         url = reverse("VehicleDetails"),
+         self.assertEquals(resolve(url).func, VehicleDetails)
