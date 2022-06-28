@@ -57,3 +57,12 @@ def test_avaibility_url(self):
 def test_vehicledetails_url(self):
          url = reverse("VehicleDetails"),
          self.assertEquals(resolve(url).func, VehicleDetails)
+
+class TestViews(TestCase):
+     def setUp(self):
+         self.client=Client()
+
+     def test_index_GET(self):
+         response=self.client.get(reverse('register'))
+         self.assertEquals(response.status_code,200)
+         self.assertTemplateUsed(response,'register.html')
