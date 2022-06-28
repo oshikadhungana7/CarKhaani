@@ -50,3 +50,13 @@ def test_loginauthen_url(self):
 def test_home_url(self):
          url = reverse("LoggedinHome"),
          self.assertEquals(resolve(url).func, Home)
+
+#     def test_signin_GET(self):
+#         response=self.client.get(reverse(''))
+#         self.assertEquals(response.status_code,200)
+#         self.assertTemplateUsed(response,'')
+    
+#     def test_register_GET(self):
+#         response=self.client.get(reverse(''))
+#         self.assertEquals(response.status_code,200)
+#         self.assertTemplateUsed(response,'')
