@@ -1,0 +1,114 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+    href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap"
+    rel="stylesheet"
+  />
+    <!-- Tab Logo -->
+    <link rel="icon" href="{% static 'img/Logos/TabTop2Logo.png' %}" type="image/gif" sizes="18x18">
+
+    <title>CarKhaani|Simply Swift {% block title %}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/customer.css' %}">
+    <script src="{% static 'js/customer.js' %}" type="text/javascript"></script>
+
+</head>
+
+<body style="background-color:aliceblue; font-family: 'Poppins', sans-serif;"
+>
+    <nav class="navbar sticky-top navbar-expand-lg" style="font-size: larger; background-color: black;" aria-label="" aria-labbelledby="">
+        <a href="\"><img class="navbar-brand" src="{% static 'img/Logos/Logo.png' %}" height="50"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/" style="color: #f1f1f1;">Listings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: #f1f1f1;">Home</a>
+                </li>
+            </ul>
+            
+            <ul class="navbar-nav justify-content-center">
+                <div class="navbar-nav justify-content-center">
+                    <form method="get" class="example" action="/search" >
+                      <input type="search" placeholder="Search here..." name="query" id="query"
+                      style=" font-size:1rem;
+                       border-radius: 10px;
+                       height:3rem; 
+                       padding: 1.4rem 2rem; 
+                       width:20rem"/>
+                    <button type="submit" style="font-size:1.4rem;
+                    font-weight:500;
+                    border-radius:20%;
+                    background-color:white;
+                    color: black;
+                    border: #f1f1f1 solid 0.2rem;
+                    margin-right: 0.8rem;
+                     height:2.8rem;
+                     width:3rem;
+                     cursor:pointer;">
+                     <i class="fa fa-search"></i>
+                    </form>
+                  </div>
+            </ul>
+
+            <ul class="navbar-nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="signin" style="color: #f1f1f1;">Sign
+                        in</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <!-- Side bar -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-10" style="margin-left: 10rem;">
+                {% block pagecontent %} {% endblock pagecontent %}
+            </div>
+        </div>
+
+        <!-- pagination -->
+        <!-- <nav aria-label="Page navigation example" >
+            <ul class="pagination justify-content-center">
+                <li class="page-item">
+                    <a class="page-link" href="#" tabindex="-1">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav> -->
+
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
+</body>
+
+</html>
