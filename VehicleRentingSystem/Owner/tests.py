@@ -75,3 +75,18 @@ class TestViews(TestCase):
 #         response=self.client.get(reverse(''))
 #         self.assertEquals(response.status_code,200)
 #         self.assertTemplateUsed(response,'')
+
+#     def test_Home_GET(self):
+#         response=self.client.get(reverse(''))
+#         self.assertEquals(response.status_code,200)
+#         self.assertTemplateUsed(response,'')
+    
+#     def test_Profile_GET(self):
+#         response=self.client.get(reverse(''))
+#         self.assertEquals(response.status_code,200)
+#         self.assertTemplateUsed(response,'')
+
+#     def test_showdetails_GET(self):
+#         response=self.client.get(reverse(''))
+#         self.assertEquals(response.status_code,200)
+#         self.assertTemplateUsed(response,'')
