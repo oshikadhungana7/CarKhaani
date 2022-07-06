@@ -48,9 +48,12 @@ def index(request):
     return render(request,'index.html',{'vehicle':vehicle})
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> Sprint_6
+=======
+>>>>>>> Sprint_7
 
 def signin(request):
     return render(request,'SignIn.html')
@@ -128,9 +131,12 @@ def Logout(request):
     return redirect('/')
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> Sprint_5
 =======
 >>>>>>> Sprint_6
+=======
+>>>>>>> Sprint_7
 def Home(request):
     if('user_email' not in request.session):
         return redirect('/signin/')
@@ -187,8 +193,11 @@ def CheckAvailability(request,Vehicle_license_plate):
     
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Sprint_6
+=======
+>>>>>>> Sprint_7
     for rv in rentvehicle:
 
         if (rv.RentVehicle_Date_of_Booking >= RentVehicle_Date_of_Booking and RentVehicle_Date_of_Return >= rv.RentVehicle_Date_of_Booking) or (RentVehicle_Date_of_Booking >= rv.RentVehicle_Date_of_Booking and RentVehicle_Date_of_Return <= rv.RentVehicle_Date_of_Return) or (RentVehicle_Date_of_Booking <= rv.RentVehicle_Date_of_Return and RentVehicle_Date_of_Return >= rv.RentVehicle_Date_of_Return):
@@ -222,10 +231,13 @@ def SentRequests(request):
     else:
         Message = "You haven't rented any vehicle yet!!"
 <<<<<<< HEAD
+<<<<<<< HEAD
         return render(req', params)
 =======
     for rv in rentvehicle
 =======
+=======
+>>>>>>> Sprint_7
         return render(request,'SentRequests.html',{'customer':customer,'rentvehicle':rentvehicle,'Message':Message})
 
 def about_us(request):
@@ -233,15 +245,22 @@ def about_us(request):
     
 def contact_us(request):
     return HttpResponse('Contact Us')
+<<<<<<< HEAD
 >>>>>>> Sprint_6
+=======
+>>>>>>> Sprint_7
 
 def search(request):
     query = request.GET['query']
     vehicle = Vehicle.objects.filter(Vehicle_name__icontains=query)
     params = {'vehicle': vehicle}
 <<<<<<< HEAD
+<<<<<<< HEAD
     return render(request,'search_not_login.html', params)
 >>>>>>> Sprint_5
 =======
     return render(request,'search_not_login.html', params)
 >>>>>>> Sprint_6
+=======
+    return render(request,'search_not_login.html', params)
+>>>>>>> Sprint_7

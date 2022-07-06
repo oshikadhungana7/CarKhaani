@@ -13,10 +13,13 @@ urlpatterns = [
     path('Profile/',views.Profile,name="Profile"),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     include("Owner.urls")),
 =======
 =======
 >>>>>>> Sprint_6
+=======
+>>>>>>> Sprint_7
     path('about/', views.about_us, name="AboutUs"),
     path('contact/', views.contact_us, name="ContactUs"),
     path('search/', views.search, name="Search"),
@@ -28,9 +31,12 @@ urlpatterns = [
     path('RentVehicle',include("RentVehicle.urls")),
     path('Owner/',include("Owner.urls")),
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> Sprint_5
 =======
 >>>>>>> Sprint_6
+=======
+>>>>>>> Sprint_7
     path('Manager/',include("Manager.urls"))
 ]
 
