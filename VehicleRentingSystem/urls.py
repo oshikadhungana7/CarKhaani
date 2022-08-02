@@ -23,4 +23,5 @@ urlpatterns = [
     path('ManagerHome/',include('Manager.urls')),
     path('RentVehicle/',include('RentVehicle.urls')),
     path('Vehicles/',include('Vehicles.urls'))
+    
 ]
