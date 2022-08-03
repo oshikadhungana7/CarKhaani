@@ -26,9 +26,9 @@ DEFAULT_AUTO_FIELD='django.db.models.AutoField'
 SECRET_KEY = 'f$*#w3#uml%@ip)b45(1v=+31+df!*&04e*d#kn%6tsc57qt_1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://vrenttesting.herokuapp.com/', '127.0.0.1']
 
 
 # Application definition

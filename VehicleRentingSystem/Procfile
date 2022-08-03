@@ -1,1 +1,1 @@
-web: gunicorn VehicleRentingSystem.wsgi
+web: gunicorn VehicleRentingSystem.wsgi --log-file -
